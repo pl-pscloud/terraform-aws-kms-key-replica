@@ -3,3 +3,5 @@ variable "pscloud_company" {}
 variable "pscloud_project" {}
 
 variable "pscloud_primary_key_arn" { }
+
+  variable "pscloud_policy" { default = "" }

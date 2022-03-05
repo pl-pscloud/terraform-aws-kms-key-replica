@@ -3,6 +3,8 @@ resource "aws_kms_replica_key" "pscloud-kms-key-replica" {
    primary_key_arn         = var.pscloud_primary_key_arn
    description             = "Multi-Region replica key"
 
+  policy               = var.pscloud_policy
+
   tags = {
     Name          = "${var.pscloud_company}_kms_key_${var.pscloud_env}"
     Project       = var.pscloud_project
